@@ -1,0 +1,51 @@
+<!-- index.html -->
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Portugal vs Spain Prediction</title>
+  <link rel="stylesheet" href="style.css"/>
+</head>
+<body>
+
+<div class="container">
+
+  <h1>PORTUGAL VS SPAIN</h1>
+  <p class="subtitle">FIFA WORLD CUP 2026 - ROUND OF 16</p>
+
+  <div class="teams">
+
+    <div class="card portugal">
+      <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/a/a8/Flag_of_Portugal_%28official%29.svg/1280px-Flag_of_Portugal_%28official%29.svg.png" alt="">
+      <h2>Portugal</h2>
+
+      <div class="percent-box">
+        <div id="portugalBar" class="bar portugal-bar">50%</div>
+      </div>
+
+      <button onclick="votePortugal()">Vote Portugal</button>
+    </div>
+
+    <div class="card spain">
+      <img src="https://upload.wikimedia.org/wikipedia/en/9/9a/Flag_of_Spain.svg" alt="">
+      <h2>Spain</h2>
+
+      <div class="percent-box">
+        <div id="spainBar" class="bar spain-bar">50%</div>
+      </div>
+
+      <button onclick="voteSpain()">Vote Spain</button>
+    </div>
+
+  </div>
+
+  <div class="result">
+    <h3>Total Votes: <span id="totalVotes">0</span></h3>
+  </div>
+
+</div>
+
+<script src="script.js"></script>
+</body>
+</html>
